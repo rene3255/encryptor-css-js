@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Guazima Cryptographic</title>
+</head>
+ 
+<body>
+    <nav class="navbar">
+        <div class="navbar__bullet">
+            <h2 class="navbar__bullet__title">VMC555</h2>
+            <span class="navbar__bullet__color"></span>
+        </div>
+        
+        <div class="menu__options">
+            <p>Links</p>
+            <p>About me</p>
+            <p>Social networks</p>
+        </div>
+    </nav>
+    <main class="content">
+        <header>
+            <h1 class="header__title">Guacima Cryptographic</h1>
+        </header>
+        <section class="content__control">
+            <section class="content__control__data-entry">
+              <div class="content__control__input">  
+                <p>Sólo letras minúsculas y sin acentos</p>
+                <input type="text" name="textCrytographic" id="textEntry" placeholder="Ingresa el dato a codificar">
+              </div>
+              <div class="content__control__buttons">
+                <button class="btnEncryption" onclick="getTextToEncryp();">Encrypt</button>
+                <button class="btnEncryption" onclick="getTextToDecryp()">DeCrypt</button>
+              </div>
+            </section>    
+            <section class="content__control__display">
+              <h2>Display panel</h2>
+              <textarea rows="10" cols="1" id="displayResult">
+                Initial text displayed in the textarea
+              </textarea>
+              <button class="btnCopy" onclick="copyToClipBoard()">Copy display content clipboard</button>
+            </section>   
+        </section>   
+    </main>
+    <footer class="footer">
+        <p><span class="footer__trade-mark">VMC555</span> | Cryptographic origins | Sponsors  <span class="footer__trade-mark">Alura Latam</span></p>
+    </footer>
+<script src="./js/encryptions.js"></script>  
+</body>
+</html>
